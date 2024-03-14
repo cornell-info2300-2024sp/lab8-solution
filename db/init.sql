@@ -85,5 +85,316 @@ VALUES
   (10, 'CS 1110', 106, 3, NULL);
 
 --- Reviews ---
--- TODO: review table
--- TODO: review seed data
+CREATE TABLE reviews (
+  id INTEGER NOT NULL UNIQUE,
+  reviewer TEXT NOT NULL,
+  rating INTEGER NOT NULL,
+  product_name TEXT NOT NULL,
+  comment TEXT,
+  created_at TEXT NOT NULL,
+  PRIMARY KEY(id AUTOINCREMENT)
+);
+
+INSERT INTO
+  reviews (
+    id,
+    reviewer,
+    rating,
+    product_name,
+    comment,
+    created_at
+  )
+VALUES
+  (
+    1,
+    'js8282@cornell.edu',
+    3,
+    'Flyknit',
+    'These run smaller.',
+    '2017-05-11 08:56:21'
+  );
+
+INSERT INTO
+  reviews (
+    id,
+    reviewer,
+    rating,
+    product_name,
+    comment,
+    created_at
+  )
+VALUES
+  (
+    2,
+    'jd1234@cornell.edu',
+    4,
+    'Flyknit',
+    'These are so comfy they don''t even feel like shoes!',
+    '2018-09-05 14:45:51'
+  );
+
+INSERT INTO
+  reviews (
+    id,
+    reviewer,
+    rating,
+    product_name,
+    comment,
+    created_at
+  )
+VALUES
+  (
+    3,
+    'alm119@cornell.edu',
+    4,
+    'Air Zoom',
+    NULL,
+    '2019-09-05 00:09:54'
+  );
+
+INSERT INTO
+  reviews (
+    id,
+    reviewer,
+    rating,
+    product_name,
+    comment,
+    created_at
+  )
+VALUES
+  (
+    4,
+    'ppl33@cornell.edu',
+    3,
+    'Roshe',
+    'Nice.',
+    '2019-08-14 01:21:08'
+  );
+
+INSERT INTO
+  reviews (
+    id,
+    reviewer,
+    rating,
+    product_name,
+    comment,
+    created_at
+  )
+VALUES
+  (
+    5,
+    'lol88@cornell.edu',
+    2,
+    'Flyknit',
+    'Not a fan. They seem kind of flimsy.',
+    '2017-09-29 07:12:28'
+  );
+
+INSERT INTO
+  reviews (
+    id,
+    reviewer,
+    rating,
+    product_name,
+    comment,
+    created_at
+  )
+VALUES
+  (
+    6,
+    'sos111@cornell.edu',
+    3,
+    'Lunar Guide',
+    'Solid shoe.',
+    '2019-12-08 11:53:06'
+  );
+
+INSERT INTO
+  reviews (
+    id,
+    reviewer,
+    rating,
+    product_name,
+    comment,
+    created_at
+  )
+VALUES
+  (
+    7,
+    'heh101@cornell.edu',
+    5,
+    'Airforce',
+    'Will buy again! Recommending to all my friends!',
+    '2018-09-27 13:07:08'
+  );
+
+INSERT INTO
+  reviews (
+    id,
+    reviewer,
+    rating,
+    product_name,
+    comment,
+    created_at
+  )
+VALUES
+  (
+    8,
+    'dj1004@cornell.edu',
+    1,
+    'Roshe',
+    NULL,
+    '2018-01-20 22:41:00'
+  );
+
+INSERT INTO
+  reviews (
+    id,
+    reviewer,
+    rating,
+    product_name,
+    comment,
+    created_at
+  )
+VALUES
+  (
+    9,
+    'hmm21@cornell.edu',
+    5,
+    'Airforce',
+    'Got mine last week and I loved them! Just ordered my second pair!',
+    '2019-07-22 19:03:00'
+  );
+
+INSERT INTO
+  reviews (
+    id,
+    reviewer,
+    rating,
+    product_name,
+    comment,
+    created_at
+  )
+VALUES
+  (
+    10,
+    'kid14@cornell.edu',
+    3,
+    'Roshe',
+    'Not sure how I feel about these but they''re alright.',
+    '2017-12-06 02:13:59'
+  );
+
+INSERT INTO
+  reviews (
+    id,
+    reviewer,
+    rating,
+    product_name,
+    comment,
+    created_at
+  )
+VALUES
+  (
+    11,
+    'man12@cornell.edu',
+    4,
+    'Roshe',
+    'It came faster than expected!',
+    '2019-12-29 06:23:00'
+  );
+
+INSERT INTO
+  reviews (
+    id,
+    reviewer,
+    rating,
+    product_name,
+    comment,
+    created_at
+  )
+VALUES
+  (
+    12,
+    'wat11@cornell.edu',
+    4,
+    'Air Zoom',
+    'The color was just as pretty in the photo!',
+    '2019-02-10 13:49:26'
+  );
+
+INSERT INTO
+  reviews (
+    id,
+    reviewer,
+    rating,
+    product_name,
+    comment,
+    created_at
+  )
+VALUES
+  (
+    13,
+    'apo96@cornell.edu',
+    4,
+    'Lunar Guide',
+    'I got these for my son and he loved them! Just make sure you check the size,  I don''t know if these run big but I had to go back and exchange it for half a size smaller',
+    '2019-03-16 02:07:09'
+  );
+
+INSERT INTO
+  reviews (
+    id,
+    reviewer,
+    rating,
+    product_name,
+    comment,
+    created_at
+  )
+VALUES
+  (
+    14,
+    'brb9@cornell.edu',
+    4,
+    'Lunar Guide',
+    'Sweet kicks.',
+    '2020-08-12 00:46:28'
+  );
+
+INSERT INTO
+  reviews (
+    id,
+    reviewer,
+    rating,
+    product_name,
+    comment,
+    created_at
+  )
+VALUES
+  (
+    15,
+    'kk34@cornell.edu',
+    3,
+    'Flyknit',
+    NULL,
+    '2019-03-17 07:27:04'
+  );
+
+INSERT INTO
+  reviews (
+    id,
+    reviewer,
+    rating,
+    product_name,
+    comment,
+    created_at
+  )
+VALUES
+  (
+    16,
+    'jam39@cornell.edu',
+    1,
+    'Lunar Guide',
+    'I expected to feel like I was walking on the moon. But it felt like I was walking on nails instead. I would give 0 stars if I could!',
+    '2021-03-31 15:00:51'
+  );

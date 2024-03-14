@@ -97,6 +97,17 @@ if (isset($_POST["request-sample"])) {
 
   // If the form is valid, show confirmation message
   if ($form_valid) {
+    // insert sample request record into database.
+    $result = exec_sql_query(
+      $db,
+      "INSERT INTO flower_samples (business_name, phone, sample_type) VALUES (:business, :phone_no, :bouquet_type);",
+      array(
+        ':business' => $form_values['name'],
+        ':phone_no' => $form_values['phone'],
+        ':bouquet_type' => SAMPLE_ID_CODINGS[$form_values['bouquet']],
+      )
+    );
+
     // form is valid, show confirmation message
     $show_confirmation_message = true;
   } else {
